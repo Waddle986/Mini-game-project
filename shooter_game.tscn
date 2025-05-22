@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bmj7o6hrdftgh"]
+[gd_scene load_steps=3 format=3 uid="uid://bmj7o6hrdftgh"]
 
-[ext_resource type="Texture2D" uid="uid://c6i17nl7in7kh" path="res://pixil-frame-0.png" id="1_2jdtb"]
+[ext_resource type="PackedScene" uid="uid://ctcihy6fut60m" path="res://duck.tscn" id="1_l8fvv"]
+[ext_resource type="Texture2D" uid="uid://b3bunmussbdt8" path="res://pixil-frame-0.png" id="2_rjv73"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -12,4 +13,11 @@ color = Color(0.515823, 0.766621, 0.905129, 1)
 [node name="Pixil-frame-0" type="Sprite2D" parent="."]
 position = Vector2(580, 326.5)
 scale = Vector2(11.56, 6.51)
-texture = ExtResource("1_2jdtb")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_l8fvv")]
+position = Vector2(331, 559)
+
+[node name="Pixil-frame-1" type="Sprite2D" parent="."]
+position = Vector2(576, 502)
+scale = Vector2(2.885, 2.86)
+texture = ExtResource("2_rjv73")
